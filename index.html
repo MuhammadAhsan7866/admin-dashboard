@@ -1,0 +1,2909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <title>Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template-->
+  <link href="css/custom.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script>
+</head>
+
+<body id="page-top">
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-text mx-3">
+          <img src="/img/logo-new.png" alt="" class="log-with">
+        </div>
+      </a>
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <div class="navLinkWrap">
+            <i class="fa fa-home Navicon" aria-hidden="true"></i>
+            <span>Dashboard</span>
+          </div>
+        </a>
+      </li>
+
+      <!-- Nav Item - Pages Collapse Menu -->
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" id="switchButton3">
+          <div class="navLinkWrap">
+            <i class="fa fa-user Navicon" aria-hidden="true"></i>
+            <span>Trading Accounts</span>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+          aria-controls="collapseTwo">
+          <div class="navLinkWrap">
+            <i class="fa fa-usd Navicon" aria-hidden="true"></i>
+            <span>Request</span>
+          </div>
+
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-custom py-2 collapse-inner rounded">
+
+            <a class="collapse-item" id="switchButton4" href="#">Deposits</a>
+            <a class="collapse-item" id="switchButton5" href="#">Withdrawals</a>
+            <a class="collapse-item" id="switchButton77" href="#">Deposit History</a>
+            <a class="collapse-item" id="switchButton78" href="#">Widthdraw History</a>
+          </div>
+        </div>
+      </li>
+      <!-- Administrator -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseelve" aria-expanded="true"
+          aria-controls="collapseelve">
+          <div class="navLinkWrap">
+            <i class="fa fa-usd Navicon" aria-hidden="true"></i>
+            <span>Administrator</span>
+          </div>
+
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+        <div id="collapseelve" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-custom py-2 collapse-inner rounded">
+            <a class="collapse-item" id="switchButton60" href="#">Users</a>
+            <a class="collapse-item" id="switchButton55" href="#">Transfer Blance</a>
+            <a class="collapse-item" id="switchButton56" href="#">Substract Balance</a>
+            
+          </div>
+        </div>
+      </li>
+
+      <!-- All Members -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsesys" aria-expanded="true"
+          aria-controls="collapsesys">
+          <div class="navLinkWrap">
+            <i class="fa fa-usd Navicon" aria-hidden="true"></i>
+            <span>Account</span>
+          </div>
+
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+        <div id="collapsesys" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-custom py-2 collapse-inner rounded">
+
+            <a class="collapse-item" id="switchButton57" href="#">Live Account </a>
+            <a class="collapse-item" id="switchButton58" href="#">Demo  Account</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item" id="switchButton8">
+        <a class="nav-link collapsed" href="#">
+          <div class="navLinkWrap">
+            <i class="fa fa-address-card Navicon" aria-hidden="true"></i>
+            <span> Analysis & Tools</span>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+          aria-controls="collapseThree">
+          <div class="navLinkWrap">
+            <i class="fa fa-usd Navicon" aria-hidden="true"></i>
+            <span>Social Trading</span>
+          </div>
+
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-custom py-2 collapse-inner rounded">
+
+            <a class="collapse-item" href="#">Social Trading Account</a>
+            <a class="collapse-item" href="#">Social Trading Provider</a>
+            <a class="collapse-item" href="#">Social Trading Login</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item" id="switchButton7">
+        <a class="nav-link collapsed" href="#">
+          <div class="navLinkWrap">
+            <i class="fa fa-address-card Navicon" aria-hidden="true"></i>
+            <span>KYC</span>
+          </div>
+        </a>
+      </li>
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline sidebarPlus">
+        <span class="rounded-circle border-0">
+          <i id="sidebarToggle" class="fa fa-plus-square" aria-hidden="true"></i>
+        </span>
+      </div>
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <!-- Main Content -->
+
+      <div id="content">
+         <!-- Topbar -->
+         <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow">
+          <!-- Sidebar Toggle (Topbar) -->
+         
+
+          <!-- Topbar Navbar -->
+          <div class="avatar_cus">
+        <img src="/img/nova.png" alt="" class="nva">
+            <div class="profile">
+              <div class="user">
+                <h3>Kamran Ali</h3>
+              
+              </div>
+              <div class="img-box">
+                <img src="https://i.postimg.cc/BvNYhMHS/user-img.jpg" alt="some user image">
+              </div>
+            </div>
+            <div class="menucus">
+              <ul>
+                <li><a href="#"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
+                <li><a href="#"><i class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
+                <li><a href="#"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- End of Topbar -->
+
+      </div>
+      <!-- Begin Page Content -->
+      <div class="body-pge video-section">|
+
+        <!-- Live Screen -->
+        <div class="button-inner-page" id="screen2">
+          <div class="container-fluid">
+            <div class="card  h-100">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="card-ttle">
+                      <p> Request a New Trading Account
+                      </p>
+                    </div>
+                    <div class="custom mt-3">
+                      <form action="" id="form2">
+                        <div class="mb-3">
+                          <label class="form-label">Selecione Uma opçao</label>
+                          <select class="selectpicker form-control" title="Selecione uma opçao">
+                            <option value="1">Live</option>
+                          </select>
+                        </div>
+                        <button type="submit" class="open-btn">Get Trading Account</button>
+                      </form>
+
+                      <div class="resultado"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="maintable">
+              <div class="title-table mt-lg-5">
+                <h1>Trading Accounts</h1>
+              </div>
+            </div>
+            <div class="table-trans">
+
+              <table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%">
+                <thead>
+                  <tr>
+                    <th>ID </th>
+                    <th>Account ID </th>
+                    <th>Password</th>
+                    <th>Investor Pasword</th>
+                    <th>Type</th>
+                    <th>Group</th>
+                    <th>Leverage</th>
+                    <th>Created at</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>99123</td>
+                    <td>bQVgM4!#</td>
+                    <td>fCeA3qx? </td>
+                    <td>
+                      <div class="live">
+                        <p>Live</p>
+                      </div>
+                    </td>
+                    <td>Standard</td>
+                    <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td>
+                    <td>05-Oct-2023 </td>
+                    <td>
+                      <div class="btns-ivestor">
+                        <button>Change Password</button>
+                        <button>Change Password</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>99123</td>
+                    <td>bQVgM4!#</td>
+                    <td>fCeA3qx? </td>
+                    <td>
+                      <div class="live">
+                        <p>Live</p>
+                      </div>
+                    </td>
+                    <td>Standard</td>
+                    <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td>
+                    <td>05-Oct-2023 </td>
+                    <td>
+                      <div class="btns-ivestor">
+                        <button>Change Password</button>
+                        <button>Change Password</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>99123</td>
+                    <td>bQVgM4!#</td>
+                    <td>fCeA3qx? </td>
+                    <td>
+                      <div class="live">
+                        <p>Live</p>
+                      </div>
+                    </td>
+                    <td>Standard</td>
+                    <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td>
+                    <td>05-Oct-2023 </td>
+                    <td>
+                      <div class="btns-ivestor">
+                        <button>Change Password</button>
+                        <button>Change Password</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>99123</td>
+                    <td>bQVgM4!#</td>
+                    <td>fCeA3qx? </td>
+                    <td>
+                      <div class="live">
+                        <p>Live</p>
+                      </div>
+                    </td>
+                    <td>Standard</td>
+                    <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td>
+                    <td>05-Oct-2023 </td>
+                    <td>
+                      <div class="btns-ivestor">
+                        <button>Change Password</button>
+                        <button>Change Password</button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+        <!-- Demo Screen -->
+        <div class="button-inner-page" id="demo">
+          <div class="container-fluid">
+            <div class="card  h-100">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="card-ttle">
+                      <p> Request a New Trading Account
+                      </p>
+                    </div>
+                    <div class="custom mt-3">
+                      <form action="" id="form2">
+                        <div class="mb-3">
+                          <label class="form-label">Selecione Uma opçao</label>
+                          <select class="selectpicker form-control" title="Selecione uma opçao">
+                            <option value="1">Demo</option>
+                          </select>
+                        </div>
+                        <button type="submit" class="open-btn">Get Trading Account</button>
+                      </form>
+
+                      <div class="resultado"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="maintable">
+              <div class="title-table mt-lg-5">
+                <h1>Trading Accounts</h1>
+              </div>
+            </div>
+            <div class="table-trans">
+
+              <table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%">
+                <thead>
+                  <tr>
+                    <th>ID </th>
+                    <th>Account ID </th>
+                    <th>Password</th>
+                    <th>Investor Pasword</th>
+                    <th>Type</th>
+                    <th>Group</th>
+                    <th>Leverage</th>
+                    <th>Created at</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>99123</td>
+                    <td>bQVgM4!#</td>
+                    <td>fCeA3qx? </td>
+                    <td>
+                      <div class="live">
+                        <p>Live</p>
+                      </div>
+                    </td>
+                    <td>Standard</td>
+                    <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td>
+                    <td>05-Oct-2023 </td>
+                    <td>
+                      <div class="btns-ivestor">
+                        <button>Change Password</button>
+                        <button>Change Password</button>
+                      </div>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+        <!-- Demo screen End  -->
+        <!-- Trading Account -->
+        <div class="button-inner-page" id="trading">
+          <div class="container-fluid">
+            hlihklkj
+          </div>
+
+        </div>
+
+        <!-- Deposits sidebar clicking -->
+        <div class="button-inner-page" id="Deposits">
+          <div class="container-fluid">
+
+            <div class="maintable">
+              <div class="title-total-figure">
+
+                <div class="figure-credit">
+                  <div class="figure-icon">
+                    <div class="totl-depo">
+                      <span>Total deposits</span>
+                      <p>35,000$</p>
+                    </div>
+
+                    <img src="/img/count-removebg-preview.png" alt="count">
+                  </div>
+                </div>
+              </div>
+                  <!-- Month Years Filters -->
+
+                  <div class="filters-alerts">
+                    <button class="rgbss ">Today</button>
+                    <button class="rgbss ">7 Days</button>
+                    <button class="rgbss ">15 Days</button>
+                    <button class="rgbss ">30 Days</button>
+                    <div class="clnd">
+                      <input type="date" name="dateofbirth" id="dateofbirth">
+                      <p>From</p>
+                      <input type="date" name="dateofbirth" id="dateofbirth">
+                    </div>
+    
+                  </div>
+    
+                  <!-- Months filter End -->
+              <div class="title-table mt-lg-5 d-flex justify-content-between align-items-center">
+                <h1>Deposit History</h1>
+                <div class="filtr">
+                  <p>Filter Results</p>
+                  
+                  <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Pending</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption"data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="table-trans">
+
+              <table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%">
+                <thead style="background: #f36c07;border: none;">
+                  <tr>
+                    <th>ID </th>
+                    <th>User Name</th>
+                    <th>Amount</th>
+                    <th>Wallet Adress</th>
+                    <th>TRX ID</th>
+                    <th></th>
+
+                    <th>Date | Time</th>
+                    <th>Status</th>
+                    <th>Pro Member</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Ahtisham</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                      <!-- Custom Dropdown Selection -->
+                   
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Status</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                 
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Nabeel</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                       <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Status</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                    </td>
+                  
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Junaid</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                       <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Status</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Ahmed</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                      <!-- <div class="btns-ivestor2">
+                          <button class="can-req1">Approve</button>
+                          <button class="can-req">Cancle</button>
+                        </div>
+                       -->
+                      <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Status</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Ahtisham</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                       <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Status</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Ahtisham</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                       <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Status</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Ahtisham</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                       <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Status</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Ahtisham</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                      <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Status</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Ahtisham</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                       <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Status</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Ahtisham</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                       <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Status</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="pagi">
+                <div class="pagination">
+                  <button class="arrow" id="prevPage" disabled>← <span class="nav-text">PREV</span></button>
+                  <div class="pages">
+                    <div class="page-number active">1</div>
+                    <div class="page-number">2</div>
+                    <div class="page-number">3</div>
+                    <div class="page-number">4</div>
+                    <div class="page-number">5</div>
+
+                  </div>
+                  <button class="arrow" id="nextPage"><span class="nav-text">NEXT</span> →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Deposit sidebar clicking End  -->
+       
+      <!-- Live Memmbers -->
+       
+      <div class="button-inner-page" id="Live_Memmbers">
+        <div class="container-fluid">
+
+          <div class="maintable">
+            <div class="title-total-figure">
+
+              <div class="figure-credit">
+                <div class="figure-icon">
+                  <div class="totl-depo">
+                    <span>Total deposits</span>
+                    <p>35,0000$</p>
+                  </div>
+
+                  <img src="/img/count-removebg-preview.png" alt="count">
+                </div>
+              </div>
+            </div>
+            <div class="title-table mt-lg-5 ">
+              <h1>Live Account Members <span class="memcount">(999)</span></h1>
+              
+             
+            </div>
+          </div>
+          <div class="table-trans">
+
+            <table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%">
+              <thead style="background: #f36c07;border: none;">
+                <tr>
+                  <th>ID </th>
+                  <th>User Name</th>
+                  <th>Amount</th>
+                  <th>Wallet Adress</th>
+                  <th>TRX ID</th>
+                 
+                  <th>Date | Time</th>
+               
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                 
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                 
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Nabeel</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                 
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                 
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Junaid</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Ahmed</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                 
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                 
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                 
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                 
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                 
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                 
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                 
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                 
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="pagi">
+              <div class="pagination">
+                <button class="arrow" id="prevPage" disabled>← <span class="nav-text">PREV</span></button>
+                <div class="pages">
+                  <div class="page-number active">1</div>
+                  <div class="page-number">2</div>
+                  <div class="page-number">3</div>
+                  <div class="page-number">4</div>
+                  <div class="page-number">5</div>
+
+                </div>
+                <button class="arrow" id="nextPage"><span class="nav-text">NEXT</span> →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+      <!-- Live Members End -->
+       <!-- Demo Memmbers -->
+       
+       <div class="button-inner-page" id="Demo_Memmbers">
+        <div class="container-fluid">
+
+          <div class="maintable">
+            <div class="title-total-figure">
+
+              <div class="figure-credit">
+                <div class="figure-icon">
+                  <div class="totl-depo">
+                    <span>Total deposits</span>
+                    <p>35,0000$</p>
+                  </div>
+
+                  <img src="/img/count-removebg-preview.png" alt="count">
+                </div>
+              </div>
+            </div>
+            <div class="title-table mt-lg-5 d-flex justify-content-between align-items-center">
+              <h1>Demo Account Members <span class="memcount">(5000)</span></h1>
+             
+            </div>
+          </div>
+          <div class="table-trans">
+
+            <table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%">
+              <thead style="background: #f36c07;border: none;">
+                <tr>
+                  <th>ID </th>
+                  <th>User Name</th>
+                  <th>Amount</th>
+                  <th>Wallet Adress</th>
+                  <th>TRX ID</th>
+                  <th></th>
+
+                  <th>Date | Time</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Nabeel</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Junaid</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Ahmed</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="pagi">
+              <div class="pagination">
+                <button class="arrow" id="prevPage" disabled>← <span class="nav-text">PREV</span></button>
+                <div class="pages">
+                  <div class="page-number active">1</div>
+                  <div class="page-number">2</div>
+                  <div class="page-number">3</div>
+                  <div class="page-number">4</div>
+                  <div class="page-number">5</div>
+
+                </div>
+                <button class="arrow" id="nextPage"><span class="nav-text">NEXT</span> →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+      <!-- Live Members End -->
+        <!-- withdraw sidebar clicking -->
+        <div class="button-inner-page" id="withdraw">
+          <div class="container-fluid">
+
+            <div class="maintable">
+              <div class="title-total-figure">
+
+                <div class="figure-credit">
+                  <div class="figure-icon">
+                    <div class="totl-depo">
+                      <span>Total Withdraw</span>
+                      <p>35,000$</p>
+                    </div>
+
+                    <img src="/img/count-removebg-preview.png" alt="count">
+                  </div>
+                </div>
+              </div>
+                  <!-- Month Years Filters -->
+
+                  <div class="filters-alerts">
+                    <button class="rgbss ">Today</button>
+                    <button class="rgbss ">7 Days</button>
+                    <button class="rgbss ">15 Days</button>
+                    <button class="rgbss ">30 Days</button>
+                    <div class="clnd">
+                      <input type="date" name="dateofbirth" id="dateofbirth">
+                      <p>From</p>
+                      <input type="date" name="dateofbirth" id="dateofbirth">
+                    </div>
+    
+                  </div>
+    
+                  <!-- Months filter End -->
+              <div class="title-table mt-lg-5 d-flex justify-content-between align-items-center">
+                <h1>Withdraw History</h1>
+                <div class="filtr">
+                  <p>Filter Results</p>
+                  
+                  <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Pending</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption">Approved</div>
+                      <div class="option" data-type="thirdOption">Cancled</div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="table-trans">
+
+              <table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%">
+                <thead style="background: #f36c07;border: none;">
+                  <tr>
+                    <th>ID </th>
+                    <th>User Name</th>
+                    <th>Amount</th>
+                    <th>Wallet Adress</th>
+                    <th>TRX ID</th>
+                    <th></th>
+
+                    <th>Date | Time</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Ahtisham</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                      <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="thirdOption">Cancled</div>
+                    <div class="selectDropdown" style="z-index: 4;">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Nabeel</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                       <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="thirdOption">Cancled</div>
+                    <div class="selectDropdown" style="z-index: 2;">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Junaid</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                       <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Status</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Ahmed</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                      <!-- <div class="btns-ivestor2">
+                          <button class="can-req1">Approve</button>
+                          <button class="can-req">Cancle</button>
+                        </div>
+                       -->
+                      <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Status</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Ahtisham</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                       <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Status</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Ahtisham</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                       <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Status</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Ahtisham</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                       <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Status</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Ahtisham</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                      <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Status</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Ahtisham</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                       <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Status</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Ahtisham</td>
+                    <td>500$</td>
+                    <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                    <td>
+                      05487788311
+                    </td>
+                    <td></td>
+                    <!-- <td>
+                        <div class="levergae">
+                          <p>100</p>
+                        </div>
+                      </td> -->
+                    <td>05-Oct-2023 </td>
+                    <td>
+                       <!-- Custom Dropdown Selection -->
+
+                  <div class="selectcus">
+                    <div class="selectBtn" data-type="firstOption">Status</div>
+                    <div class="selectDropdown">
+                      <div class="option" data-type="firstOption">Pending</div>
+                      <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                      <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#basicModal">Cancled</div>
+                    </div>
+                  </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="pagi">
+                <div class="pagination">
+                  <button class="arrow" id="prevPage" disabled>← <span class="nav-text">PREV</span></button>
+                  <div class="pages">
+                    <div class="page-number active">1</div>
+                    <div class="page-number">2</div>
+                    <div class="page-number">3</div>
+                    <div class="page-number">4</div>
+                    <div class="page-number">5</div>
+
+                  </div>
+                  <button class="arrow" id="nextPage"><span class="nav-text">NEXT</span> →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- withdraw sidebar clicking End -->
+        <!-- KYC Screen Start -->
+        <div class="button-inner-page" id="KYC">
+          <div class="container-fluid">
+            hello
+          </div>
+
+        </div>
+        <!-- KYC Screen End  -->
+
+        <!--  Analysis & Tools -->
+
+        <div class="button-inner-page" id="Analysis">
+          <div class="container-fluid">
+            nhjkjkkh
+          </div>
+
+        </div>
+        <!-- Analysis & Tools End -->
+
+      <!-- All Users -->
+
+      <div class="button-inner-page" id="all_users">
+        <div class="container-fluid">
+
+          <div class="maintable">
+            <div class="title-total-figure">
+            </div>
+            <div class="title-table mt-lg-5 d-flex justify-content-between align-items-center">
+              <h1>All Users Data</h1>
+             
+            </div>
+          </div>
+          <div class="table-trans">
+
+            <table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%">
+              <thead style="background: #f36c07;border: none;">
+                <tr>
+                  <th>ID </th>
+                  <th>User Name</th>
+                  <th>Amount</th>
+                  <th>Wallet Adress</th>
+                  <th>TRX ID</th>
+                  <th></th>
+
+                  <th>Date | Time</th>
+                  <th>Profile</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    <button class="usr-prf">Profile</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Nabeel</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    <button class="usr-prf" data-bs-toggle="modal" data-bs-target="#my88">Profile</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Junaid</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    <button class="usr-prf">Profile</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Ahmed</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    <button class="usr-prf">Profile</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    <button class="usr-prf">Profile</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    <button class="usr-prf">Profile</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    <button class="usr-prf">Profile</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    <button class="usr-prf">Profile</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    <button class="usr-prf">Profile</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Ahtisham</td>
+                  <td>500$</td>
+                  <td>2N3oefVeg6stiTb5Kh3ozCSkaqmx91FDbsm? </td>
+                  <td>
+                    05487788311
+                  </td>
+                  <td></td>
+                  <!-- <td>
+                      <div class="levergae">
+                        <p>100</p>
+                      </div>
+                    </td> -->
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    <button class="usr-prf">Profile</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="pagi">
+              <div class="pagination">
+                <button class="arrow" id="prevPage" disabled="">← <span class="nav-text">PREV</span></button>
+                <div class="pages">
+                  <div class="page-number active">1</div>
+                  <div class="page-number">2</div>
+                  <div class="page-number">3</div>
+                  <div class="page-number">4</div>
+                  <div class="page-number">5</div>
+
+                </div>
+                <button class="arrow" id="nextPage"><span class="nav-text">NEXT</span> →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+     <!-- All USers End -->
+
+      <!-- Transfer Blance -->
+
+      <div class="button-inner-page" id="Blance">
+        <div class="container-fluid">
+          <div class="search-box">
+            <input class="search-input" type="text" placeholder="Search ID / UserName..">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+          </div>
+          <!-- You just need to get this field. End -->
+        </div>
+        <div class="credit-card-form">
+         
+      <img class="Image1" src="/img/trdfr.png" alt="6375aad33dbabc9c424b5713-card-mockup-01"></a>
+        
+          <form>
+            <div class="form-group">
+              <label for="card-number">UserName</label>
+              <input type="text" id="card-number" placeholder="ID / UserName">
+            </div>
+            <div class="form-group">
+              <label for="card-number">Amount</label>
+              <input type="text" id="card-number" placeholder="Enter Amount">
+            </div>
+          
+            <button type="submit" class="click-button" onclick="showLoading(event, this)">Tranfer Amount</button>
+          </form>
+        </div>
+      </div>
+
+
+      <!-- Subtract Blance  -->
+
+
+      <div class="button-inner-page" id="Subtract">
+        <div class="container-fluid">
+          <div class="search-box">
+            <input class="search-input" type="text" placeholder="Search ID / UserName..">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+          </div>
+          <!-- You just need to get this field. End -->
+        </div>
+        <div class="credit-card-form">
+         
+      <img class="Image1" src="/img/trdfr.png" alt="6375aad33dbabc9c424b5713-card-mockup-01"></a>
+        
+          <form>
+            <div class="form-group">
+              <label for="card-number">UserName</label>
+              <input type="text" id="card-number" placeholder="ID / UserName">
+            </div>
+            <div class="form-group">
+              <label for="card-number">Amount</label>
+              <input type="text" id="card-number" placeholder="Enter Amount">
+            </div>
+          
+            <button type="submit" class="click-button" onclick="showLoadingsubs(event, this)">Tranfer Blance</button>
+          </form>
+        </div>
+      </div>
+
+
+
+      <!-- Deposit History Approved / Cancled / Pending Status  -->
+
+
+      <div class="button-inner-page" id="depohis">
+        <div class="container-fluid">
+          <!-- Filter Total Sum -->
+          <div class="maintable">
+            <div class="title-total-figure">
+              <div class="figure-credit">
+                <div class="figure-icon">
+                  <div class="totl-depo">
+                    <span>Total deposits</span>
+                    <p>35,000$</p>
+                  </div>
+
+                  <img src="/img/count-removebg-preview.png" alt="count">
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Month Years Filters -->
+
+            <div class="filters-alerts">
+              <button class="rgbss ">Today</button>
+              <button class="rgbss ">7 Days</button>
+              <button class="rgbss ">15 Days</button>
+              <button class="rgbss ">30 Days</button>
+              <div class="clnd">
+                <input type="date" name="dateofbirth" id="dateofbirth">
+                <p>From</p>
+                <input type="date" name="dateofbirth" id="dateofbirth">
+              </div>
+
+            </div>
+
+            <!-- Months filter End -->
+
+            <div class="title-table mt-lg-5 d-flex justify-content-between align-items-center rslts">
+              <h1>Total Deposits Status</h1>
+              <div class="filtr">
+                <p>Filter Results</p>
+
+
+                <!-- Custom Dropdown Selection -->
+
+                <div class="selectcus">
+                  <div class="selectBtn" data-type="firstOption">Pending</div>
+                  <div class="selectDropdown">
+                    <div class="option" data-type="firstOption">Pending</div>
+                    <!-- <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModalappro">Approved</div>
+                    <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#smallModalcable">Cancled</div> -->
+                    <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+                    <div class="option" data-type="thirdOption"data-toggle="modal" data-target="#basicModal">Cancled</div>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+          <!-- Filter End  -->
+
+          <div class="table-trans">
+
+            <table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%">
+              <thead>
+                <tr>
+                  <th>ID </th>
+                  <th>Account ID </th>
+                  <th>Username</th>
+                  <th>Withdraw Amount</th>
+                  <th>Wallet Adress</th>
+                  <th>TRX ID</th>
+                  <th></th>
+                  <th>Date | Time</th>
+                  <th>Status </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>99123</td>
+                  <td>Ahmed123</td>
+                  <td>
+                    <div class="live">
+                      <p>1000$</p>
+                    </div>
+                  </td>
+                  <td>
+                    fVeg6stiTb5Kh3ozCSkaqmx91FDbsm
+                  </td>
+                  <td>15454548</td>
+                  <td>
+
+                  </td>
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    <div class="apr">
+                      <p>Approved</p>
+
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>99123</td>
+                  <td>Ahmed123</td>
+                  <td>
+                    <div class="live">
+                      <p>1000$</p>
+                    </div>
+                  </td>
+                  <td>
+                    fVeg6stiTb5Kh3ozCSkaqmx91FDbsm
+                  </td>
+                  <td>15454548</td>
+                  <td>
+
+                  </td>
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    <div class="apr2">
+                      <p>Pending</p>
+
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>99123</td>
+                  <td>Ahmed123</td>
+                  <td>
+                    <div class="live">
+                      <p>1000$</p>
+                    </div>
+                  </td>
+                  <td>
+                    fVeg6stiTb5Kh3ozCSkaqmx91FDbsm
+                  </td>
+                  <td>15454548</td>
+                  <td>
+
+                  </td>
+                  <td>05-Oct-2023 </td>
+                  <td>
+                    <div class="apr3">
+                      <p>Cancled</p>
+
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+
+
+<!-- Widthdraw History Approved / Cancled / Pending Status  -->
+
+
+<div class="button-inner-page" id="widhis">
+  <div class="container-fluid">
+    <!-- Filter Total Sum -->
+    <div class="maintable">
+      <div class="title-total-figure">
+        <div class="figure-credit">
+          <div class="figure-icon">
+            <div class="totl-depo">
+              <span>Total Withdraw</span>
+              <p>35,000$</p>
+            </div>
+
+            <img src="/img/count-removebg-preview.png" alt="count">
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Month Years Filters -->
+
+      <div class="filters-alerts">
+        <button class="rgbss ">Today</button>
+        <button class="rgbss ">7 Days</button>
+        <button class="rgbss ">15 Days</button>
+        <button class="rgbss ">30 Days</button>
+        <div class="clnd">
+          <input type="date" name="dateofbirth" id="dateofbirth">
+          <p>From</p>
+          <input type="date" name="dateofbirth" id="dateofbirth">
+        </div>
+
+      </div>
+
+      <!-- Months filter End -->
+
+      <div class="title-table mt-lg-5 d-flex justify-content-between align-items-center rslts">
+        <h1>Total Withdraw Status</h1>
+        <div class="filtr">
+          <p>Filter Results</p>
+
+
+          <!-- Custom Dropdown Selection -->
+
+          <div class="selectcus">
+            <div class="selectBtn" data-type="firstOption">Pending</div>
+            <div class="selectDropdown">
+              <div class="option" data-type="firstOption">Pending</div>
+              <!-- <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModalappro">Approved</div>
+              <div class="option" data-type="thirdOption" data-toggle="modal" data-target="#smallModalcable">Cancled</div> -->
+              <div class="option" data-type="secondOption" data-toggle="modal" data-target="#smallModal">Approved</div>
+              <div class="option" data-type="thirdOption"data-toggle="modal" data-target="#basicModal">Cancled</div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+    <!-- Filter End  -->
+
+    <div class="table-trans">
+
+      <table id="responsive-data-table" class="table dt-responsive nowrap" style="width:100%">
+        <thead>
+          <tr>
+            <th>ID </th>
+            <th>Account ID </th>
+            <th>Username</th>
+            <th>Withdraw Amount</th>
+            <th>Wallet Adress</th>
+            <th>TRX ID</th>
+            <th></th>
+            <th>Date | Time</th>
+            <th>Status </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>99123</td>
+            <td>Ahmed123</td>
+            <td>
+              <div class="live">
+                <p>1000$</p>
+              </div>
+            </td>
+            <td>
+              fVeg6stiTb5Kh3ozCSkaqmx91FDbsm
+            </td>
+            <td>15454548</td>
+            <td>
+
+            </td>
+            <td>05-Oct-2023 </td>
+            <td>
+              <div class="apr">
+                <p>Approved</p>
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>99123</td>
+            <td>Ahmed123</td>
+            <td>
+              <div class="live">
+                <p>1000$</p>
+              </div>
+            </td>
+            <td>
+              fVeg6stiTb5Kh3ozCSkaqmx91FDbsm
+            </td>
+            <td>15454548</td>
+            <td>
+
+            </td>
+            <td>05-Oct-2023 </td>
+            <td>
+              <div class="apr2">
+                <p>Pending</p>
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>99123</td>
+            <td>Ahmed123</td>
+            <td>
+              <div class="live">
+                <p>1000$</p>
+              </div>
+            </td>
+            <td>
+              fVeg6stiTb5Kh3ozCSkaqmx91FDbsm
+            </td>
+            <td>15454548</td>
+            <td>
+
+            </td>
+            <td>05-Oct-2023 </td>
+            <td>
+              <div class="apr3">
+                <p>Cancled</p>
+
+              </div>
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+
+</div>
+
+
+        <!-- Trading Account End -->
+        <div class="container-fluid mt5 screen" id="screen1">
+          <div class="container-fluid mt5  ">
+            <!-- Content Row -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-xl-4 col-md-6 mb-4">
+                    <div class="card  h-100">
+                      <div class="card-body bg-img-lay"
+                        style="border-image-source: linear-gradient(to left, #743ad5, #c94d9c);border-width: 1px;border-style: solid;border-image: linear-gradient(to right, #FDA62D, #FB5B00) 1;">
+
+                        <div class="row no-gutters align-items-center">
+                          <div class="col mr-2">
+
+                            <div class="row no-gutters align-items-center">
+                              <div class="bdy-data">
+                                <div class="imgs">
+                                  <img src="/img/member-icon.jpg" alt="" class="mem">
+                                  <img src="/img/vvvv-removebg-preview.png" alt="" class="antlytics">
+                                </div>
+
+                                <div class="membrs">
+
+                                  <p>Total Members</p>
+                                  <span>3500</span>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6 mb-4">
+                    <div class="card  h-100">
+                      <div class="card-body"
+                        style="border: 2px solid #4182ED;border-width: 1px;border-style: solid;border-image: linear-gradient(to right, #FB5B00, #3F7CE1) 1;">
+                        <div class="row no-gutters align-items-center">
+                          <div class="bdy-data">
+                            <div class="imgs">
+                              <img src="/img/deposits.png" alt="" class="mem">
+                              <img src="/img/Vector3.png" alt="" class="antlytics">
+                            </div>
+
+                            <div class="membrs">
+
+                              <p>Total Deposit</p>
+                              <span>1500</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6 mb-4">
+                    <div class="card">
+                      <div class="card-body"
+                        style="border: 2px solid #0BBA8F;border-width: 1px;border-style: solid;border-image: linear-gradient(to right, #FB5B00, #0BBA8F) 1;">
+                        <div class="row no-gutters align-items-center">
+                          <div class="bdy-data">
+                            <div class="imgs">
+                              <img src="/img/withdraw.png" alt="" class="mem">
+                              <img src="/img/greem-removebg-preview.png" alt="" class="antlytics">
+                            </div>
+
+                            <div class="membrs">
+
+                              <p>Total Withdraws</p>
+                              <span>2500</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!--  Tabs custom -->
+              <div class="containercus">
+               
+                <ul class="nav nav-tabs tabs-dark bg-dark" id="myTab" role="tablist">
+                  <li class="nav-item">
+                   <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Monthly</a>
+                  </li>
+                  <li class="nav-item">
+                   <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Annualy</a>
+                  </li>
+                  
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <dl class="chart" style="--scale: 100;">
+
+                      <dt class="date">JAN</dt>
+                      <dd class="bar1" style="--start: 56;">
+                        <span class="value">$5500</span>
+                      </dd>
+    
+                      <dt class="date">FEB</dt>
+                      <dd class="bar2" style="--start: 1;">
+                        <span class="value">$5500</span>
+                      </dd>
+    
+                      <dt class="date">MARCH</dt>
+                      <dd class="bar3" style="--start: 38;">
+                        <span class="value">$5500</span>
+                      </dd>
+    
+                      <dt class="date">APRIL</dt>
+                      <dd class="bar4" style="--start: 90;">
+                        <span class="value">$5500</span>
+                      </dd>
+    
+                      <dt class="date">MAY</dt>
+                      <dd class="bar5" style="--start: 55;">
+                        <span class="value">$5500</span>
+                      </dd>
+    
+                      <dt class="date">JUNE</dt>
+                      <dd class="bar6" style="--start: 13;">
+                        <span class="value">$5500</span>
+                      </dd>
+    
+                      <dt class="date">JULY</dt>
+                      <dd class="bar7" style="--start: 66;">
+                        <span class="value">$5500</span>
+                      </dd>
+    
+                      <dt class="date">AUG</dt>
+                      <dd class="bar8" style="--start: 96;">
+                        <span class="value">$5500</span>
+                      </dd>
+    
+                      <dt class="date">SEP</dt>
+                      <dd class="bar9" style="--start: 23;">
+                        <span class="value">$4500</span>
+                      </dd>
+    
+                      <dt class="date">OCT</dt>
+                      <dd class="bar10" style="--start: 10;">
+                        <span class="value">$800</span>
+                      </dd>
+    
+                      <dt class="date">NOV</dt>
+                      <dd class="bar11" style="--start: 46;">
+                        <span class="value">$1500</span>
+                      </dd>
+    
+                      <dt class="date">DEC</dt>
+                      <dd class="bar12" style="--start: 85;">
+                        <span class="value">$1000</span>
+                      </dd>
+    
+                    </dl>
+                  </div>
+                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <dl class="chart" style="--scale: 100;">
+
+                      <dt class="date">2023</dt>
+                      <dd class="bar1" style="--start: 56;">
+                        <span class="value">$5500</span>
+                      </dd>
+    
+                      <dt class="date">2024</dt>
+                      <dd class="bar2" style="--start: 1;">
+                        <span class="value">$5500</span>
+                      </dd>
+    
+                      <dt class="date">2025</dt>
+                      <dd class="bar3" style="--start: 38;">
+                        <span class="value">$5500</span>
+                      </dd>
+    
+                      <dt class="date">2026</dt>
+                      <dd class="bar4" style="--start: 90;">
+                        <span class="value">$5500</span>
+                      </dd>
+    
+                      <dt class="date">2027</dt>
+                      <dd class="bar5" style="--start: 55;">
+                        <span class="value">$5500</span>
+                      </dd>
+    
+                      <dt class="date">2028</dt>
+                      <dd class="bar6" style="--start: 13;">
+                        <span class="value">$5500</span>
+                      </dd>
+    
+                      <dt class="date">2029</dt>
+                      <dd class="bar7" style="--start: 66;">
+                        <span class="value">$5500</span>
+                      </dd>
+    
+                      <dt class="date">2030</dt>
+                      <dd class="bar8" style="--start: 96;">
+                        <span class="value">$5500</span>
+                      </dd>
+    
+                      <dt class="date">2031</dt>
+                      <dd class="bar9" style="--start: 23;">
+                        <span class="value">$4500</span>
+                      </dd>
+    
+                      <dt class="date">2032</dt>
+                      <dd class="bar10" style="--start: 10;">
+                        <span class="value">$800</span>
+                      </dd>
+    
+                      <dt class="date">2033</dt>
+                      <dd class="bar11" style="--start: 46;">
+                        <span class="value">$1500</span>
+                      </dd>
+    
+                      <dt class="date">2034</dt>
+                      <dd class="bar12" style="--start: 85;">
+                        <span class="value">$1000</span>
+                      </dd>
+    
+                    </dl>
+                  </div>
+                 
+                </div>
+              </div>
+
+              </div>
+              <!-- Pills content -->
+
+
+              <div class="col-md-12">
+                <!-- Expanding on https://css-tricks.com/making-a-bar-chart-with-css-grid/ -->
+
+                <!-- Set "--scale" based on the data: in this case 100% -->
+                <!-- Set "--start" values calculated as: "<scale> + 1 - <value>" -->
+                <!-- (the +1 corrects for 1-index of grid-lines) -->
+               
+              
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- /.container-fluid -->
+    </div>
+
+    <!-- Earnings (Monthly) Card Example -->
+
+
+    <!-- Pending Requests Card Example -->
+
+  </div>
+
+  </div>
+  <!-- /.container-fluid -->
+  </div>
+
+  <!-- End of Main Content -->
+  </div>
+  <!-- End of Content Wrapper -->
+  </div>
+  <!-- End of Page Wrapper -->
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="declartion-hed">
+        <div class="title-date">
+          <h2>Attachment</h2>
+          <p>05-Oct-2023</p>
+        </div>
+
+        <span class="close">&times;</span>
+      </div>
+      <div class="description-modal">
+        <img src="/img/receipt.png" alt="receipt">
+      </div>
+      <div class="footer-modl">
+        <div class="btnsM">
+          <button class="cls">Close</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Deposit History</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="descrtipn-alert">
+            <h3>Do you want to cancle Deposit</h3>
+          </div>
+
+        </div>
+        <div class="modal-footercustom mb-4">
+          <button type="button" class="no-btn" data-dismiss="modal">No</button>
+          <button type="button" class="yes-alert">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- View Attchement Modal -->
+  <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="title-date">
+            <h2>Attachment</h2>
+            <p>05-Oct-2023</p>
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="descrtipn-alert">
+            <img src="/img/receipt.png" alt="receipt">
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Approved Modal -->
+  <div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="title-date">
+            <h2>Approved</h2>
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="descrtipn-alert">
+            <h3>Do you Want to Approved</h3>
+          </div>
+          <div class="modal-footercustom">
+            <button type="button" class="no-btn" data-dismiss="modal">No</button>
+            <button type="button" class="yes-alert">Yes</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- The Modal -->
+<div class="modal" id="my88">
+  <div class="modal-dialog  modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Profile Details</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="profile-form">
+          <form action="">
+            <div class="lble_ipt" >
+              <label for="firstName">User ID  </label>
+              <div class="plc">
+                <input type="text" class="cntrol" id="firstName" placeholder="User ID " required>
+              </div>
+            </div>
+            <div class="lble_ipt">
+              <label for="firstName">UserName </label>
+              <div class="plc">
+                <input type="text" class="cntrol" id="firstName" placeholder="UserName" required>
+              </div>
+             
+            </div>
+            <div class="lble_ipt">
+              <label for="firstName">Live / Demo </label>
+              <div class="plc">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">Live</option>
+                  <option value="2">Demo</option>
+                  
+                </select>
+              </div>
+              <div class="lble_ipt">
+                <label for="firstName">Date </label>
+                <div class="plc">
+                  <input type="text" class="cntrol" id="firstName" placeholder="Date" required>
+                </div>
+               
+              </div>
+            </div>
+            
+          </form>
+        </div>
+       
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/custom.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const pages = document.querySelectorAll(".page");
+      const pageNumbers = document.querySelectorAll(".page-number");
+      const prevButton = document.getElementById("prevPage");
+      const nextButton = document.getElementById("nextPage");
+      let currentPage = 0;
+
+      function showPage(pageNumber) {
+        pages.forEach((page, index) => {
+          if (index === pageNumber) {
+            page.style.display = "block";
+          } else {
+            page.style.display = "none";
+          }
+        });
+      }
+
+      function updateButtons() {
+        prevButton.disabled = currentPage === 0;
+        nextButton.disabled = currentPage === pages.length - 1;
+      }
+
+      function setActive() {
+        pageNumbers.forEach((page, index) => {
+          if (currentPage === index) {
+            page.classList.add("active");
+          } else {
+            page.classList.remove("active");
+          }
+        });
+      }
+
+      pageNumbers.forEach((page, index) => {
+        page.addEventListener("click", function () {
+          showPage(index);
+          currentPage = index;
+          updateButtons();
+          setActive();
+        });
+      });
+
+      prevButton.addEventListener("click", function () {
+        if (currentPage > 0) {
+          currentPage--;
+          showPage(currentPage);
+          updateButtons();
+          setActive();
+        }
+      });
+
+      nextButton.addEventListener("click", function () {
+        if (currentPage < pages.length - 1) {
+          currentPage++;
+          showPage(currentPage);
+          updateButtons();
+          setActive();
+        }
+      });
+
+      showPage(currentPage);
+      updateButtons();
+    });
+  </script>
+  <script>
+   if ( ($(window).height() + 100) < $(document).height() ) {
+    $('#top-link-block').removeClass('hidden').affix({
+        // how far to scroll down before link "slides" into view
+        offset: {top:100}
+    });
+}
+  </script>
+   <script>
+    let index = 1;
+
+    const on = (listener, query, fn) => {
+      document.querySelectorAll(query).forEach(item => {
+        item.addEventListener(listener, el => {
+          fn(el);
+        })
+      })
+    }
+
+    on('click', '.selectBtn', item => {
+      const next = item.target.nextElementSibling;
+      next.classList.toggle('toggle');
+      next.style.zIndex = index++;
+    });
+    on('click', '.option', item => {
+      item.target.parentElement.classList.remove('toggle');
+
+      const parent = item.target.closest('.selectcus').children[0];
+      parent.setAttribute('data-type', item.target.getAttribute('data-type'));
+      parent.innerText = item.target.innerText;
+    })
+  </script>
+  <script>
+    // Notifcations
+
+let profile = document.querySelector('.profile');
+let menu = document.querySelector('.menucus');
+
+profile.onclick = function () {
+    menu.classList.toggle('active');
+}
+  </script>
+</body>
+
+</html>
