@@ -2661,6 +2661,9 @@ outline: none;
 .menucus ul li {
   list-style: none;
 }
+.menucus ul li img {
+ width: 10%;
+}
 
 .menu ul li:hover {
   background: #FA8023;
